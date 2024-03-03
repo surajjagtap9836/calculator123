@@ -6,10 +6,19 @@
     <title>calculator</title>
     <style>
 
+
+@font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
+    
         .inp{
             border-radius: 10px 10px 0px 0px ;
             background-color: aqua;
             height: 240px;
+            box-shadow: 0px 0px 2px 2px black;
         }
         .calsi{
             
@@ -17,7 +26,8 @@
             width: 600px;
             margin: 20px auto;
             border-radius: 10px;
-            box-shadow: 0px 0px 2px 5px black;
+            box-shadow: 0px 0px 8px 5px black;
+      
                   
 
             
@@ -25,16 +35,16 @@
         }
 
         .input{
-            padding: 30px;
+            padding: 10px;
             width: 500px;
-           margin: 30px 20px;
-           text-align: center;
-           font-size: 20px;
-           border: 2px solid black;
-           border-radius: 10px;
-            margin-top: 70px;
-            margin-bottom: 50PX;
-            
+            margin: 30px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 45px;
+            box-shadow: 0px 0px 1px 1px black;
+            text-align: end;
+            font-family:"Ds-Digital Normal";
+            font-size: 70px;
     
         }
 
@@ -101,7 +111,10 @@
             font-size: 20px;
             display: block;
             text-align: end;
-            margin-right: 20px;
+            margin-right: 25px;
+            padding-top: 20px;
+            
+
          }
     </style>
 </head>
@@ -110,8 +123,9 @@
     <div class="calsi">
         
         <div class="inp">
-            <input type="text"  class="input"/>
-            <b>suraj</b></div>
+         <b>suraj</b>
+            <input type="text"  class="input" placeholder="0"/>
+            </div>
             
             <div class="button">
                 <button class="btnac">OFF</button>
